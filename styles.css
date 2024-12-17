@@ -1,0 +1,23 @@
+:root {
+    /*Variables de color*/
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #ffe9d4;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff; 
+    --warm-black: #201e1c; 
+    --warm-black1: #282623; 
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #ffffff;
+    --another: #FF9536; 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: "DM Sans", serif;
+}
