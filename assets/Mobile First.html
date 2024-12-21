@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    
     <title>Mobile First</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
-</head>
-<body>
+    
+    
+    
+    
+    
+<link rel="stylesheet" href="./Mobile First_files/styles.css"><link rel="stylesheet" href="./Mobile First_files/styles(1).css"><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link href="./Mobile First_files/css2" rel="stylesheet"><link href="./Mobile First_files/css2(1)" rel="stylesheet"></head>
+<body cz-shortcut-listen="true">
     <header>
-        <img src="./assets/logo.svg" alt="">
+        <img src="./Mobile First_files/logo.svg" alt="">
         <div class="header--tittle-container">
             <h1>La próxima revolución en el intercambio de criptomonedas.</h1>
             <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
-            <a href="#plans" class="header--button">Conoce nuestros planes <span></span> </a>
+            <a href="http://127.0.0.1:5500/index.html#plans" class="header--button">Conoce nuestros planes <span></span> </a>
         </div>
     </header>
     <main>
@@ -35,7 +34,7 @@
                     <p class="currency-table--tittle">Monedas</p>
                     <div class="currency-table--container">
                         <table>
-                            <tr>
+                            <tbody><tr>
                                 <td class="table__top-left">Bitcoin</td>
                                 <td class="table__top-right table__right">$1.96 <span class="down"></span></td>
                             </tr>
@@ -51,7 +50,7 @@
                                 <td class="table__bottom-left">Stellar</td>
                                 <td class="table__bottom-right table__right">$4.96 <span class="down"></span></td>
                             </tr>
-                        </table>
+                        </tbody></table>
                         <span class="currency-table--arrow-right" id="arrow-right"></span>
                     </div>
                     <div class="currency-table--date">
@@ -64,7 +63,7 @@
                     <div class="comision-table--container">
                         <span class="comision-table--arrow-left" id="arrow-left"></span>
                         <table>
-                            <tr>
+                            <tbody><tr>
                                 <td class="table__top-left">Bitrade</td>
                                 <td class="table table__top-right table__right">$ 12.96</td>
                             </tr>
@@ -80,7 +79,7 @@
                                 <td class="table__bottom-right">Coinext</td>
                                 <td class="table__bottom-right table__right">$ 14.96</td>
                             </tr>
-                        </table>
+                        </tbody></table>
                     </div>
                     <div class="comision-table--date">
                         <p><b>Actualizado:</b> 19 Julio 23:45</p>
@@ -166,17 +165,53 @@
         </section>
     </main>
     <footer class="footer-container">
-        <div class="paragraphs-general-container">
-            <div class="paragraphs-container">
-                <p>Linkedin</p>
-                <p>Crunchbase</p>
-                <p>Hackernews</p>
-            </div>
-            <figure class="logo-container">
-                <span></span>
-            </figure>
+        <div class="paragraphs-container">
+            <p>Linkedin</p>
+            <p>Crunchbase</p>
+            <p>Hackernews</p>
         </div>
+        <figure class="logo-container">
+            <span></span>
+        </figure>
     </footer>
-</body>
-<script src="./index.js"></script>
-</html>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<script src="./Mobile First_files/index.js"></script>
+</body></html>

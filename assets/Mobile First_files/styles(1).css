@@ -359,7 +359,7 @@ main{
     align-content: center;
     width: 100%;
     min-width: 288px;
-    max-width: 550px;
+    max-width: 900px;
     height: 600px;
     text-align: left;
 }
@@ -382,7 +382,7 @@ main{
 } 
 
 .main-benefit--targets-container .benefit--target p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     width: 90%;
     color: #808080;
 }
@@ -495,7 +495,7 @@ main{
     position: relative;
     scroll-snap-align: center;
     width: 70%;
-    min-width: 190px;
+    min-width: 230px;
     max-width: 300px;
     height: 250px;
     margin: 50px auto 0;
@@ -610,14 +610,8 @@ main{
     height: 180px;
     background-color: var(--bitcoin-orange);
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.paragraphs-general-container {
-    display: flex;
-    width: 90%;
-    max-width: 600px;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .footer-container p {
@@ -625,17 +619,14 @@ main{
     font-weight: 500;
     line-height: 18px;
     color: white;
-    max-width: 700px;
 }
 
 .footer-container span {
-    display: inline-block;
-    width: 70px;    
-    height: 50px;
+    display: inline-block;    
+    height: 60px;
     background-image: url('./assets/Group\ 18.svg');
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 700px;
 }
 
 
